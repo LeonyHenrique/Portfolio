@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modal/modal.css">
+</head>
+<body>
+ 
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Leony Santos</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/leony-santos-9719822b8/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/LeonyHenrique" target="_blank">GitHub</a></li>
+                    <li><a href="mailto:leo.ny2010@hotmail.com">Email</a></li>
+               </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="header-content">
+            <div class="profile-picture">
+                <img src="img/leony.jpeg" alt="Foto de Perfil" class="profile-img">
+            </div>
+            <div class="intro-text">
+                <p>Olá, eu sou Leony Santos </p>
+                <h1><span class="highlight">Desenvolvedor Full Stack.<br> Bem-vindo ao meu portfólio</span></h1>
+                <a href="#contato" class="btn">Contate-me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container about-content">
+            <div class="about-text">
+                <h3>Sobre Mim</h3>
+                <h1>Sou um desenvolvedor Full Stack</h1>
+                <p>Olá, me chamo Leony, um jovem de 25 anos apaixonado por música, animais e jogos. Sou uma pessoa que valoriza a tranquilidade e o bem-estar de estar em casa codando. Iniciei minha jornada na programação em janeiro de 2024, na Estácio de Sá. Em seguida, participei do curso de desenvolvimento em TIC pelo Serratec - Parque Tecnológico do RJ. Meu principal objetivo é aprimorar minhas habilidades na área de desenvolvimento Full Stack. Estou entusiasmado com a oportunidade de encontrar meu primeiro emprego como desenvolvedor.</p>
+            </div>
+            <div class="about-picture">
+                <img src="img/foto2.png" alt="Foto de Perfil" class="profile-img2">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container skills-content">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="img/html.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                    <img src="img/css.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="img/js.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <img src="img/react.png" alt="React.js">
+                    <p>React.js</p>
+                </div>
+                <div class="skill-item">
+                    <img src="img/nodejs.png" alt="Node.js">
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-item">
+                    <img src="img/springboot.png" alt="Spring Boot">
+                    <p>Spring Boot</p>
+                </div>
+                <div class="skill-item">
+                    <img src="img/git.png" alt="Git">
+                    <p>Git</p>
+                </div>
+                <div class="skill-item">
+                    <img src="img/github.png" alt="GitHub">
+                    <p>GitHub</p>
+                </div>
+                <div class="skill-item">
+                    <img src="img/api.png" alt="API RESTful">
+                    <p>API RESTful</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="resume">
+        <div class="container resume-content">
+            <h2>Currículo</h2>
+            <p>Baixe o meu currículo para saber mais sobre minha formação, experiência, e habilidades.</p>
+            <a href="assets/Leony_Santos_Curriculo.pdf" class="btn" download>Baixar Currículo</a>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container portfolio-content">
+            <h2>Meu Portfólio</h2>
+            <div class="project-item">
+                <div class="project-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QHppc4QhH3A" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="project-info">
+                    <h3>SkillHub</h3>
+                    <p>O SkillHub é uma aplicação multiplataforma (web e mobile) criada para facilitar o gerenciamento de habilidades pessoais. Os usuários podem se cadastrar, fazer login e, uma vez logados, adicionar novas habilidades ao seu perfil. Além disso, o sistema permite que os usuários atualizem o nível de cada habilidade conforme avançam em seu aprendizado. Este projeto oferece uma solução prática para quem deseja manter suas competências atualizadas, com a flexibilidade de acessar e gerenciar suas habilidades tanto em dispositivos desktop quanto móveis.</p>
+                    <a  class="btn">👈🏼👈🏼👈🏼Veja o Projeto</a>
+                    <a href="#" class="btn secondary" id="openModalBtn">Repositório</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="certifications">
+        <div class="container certifications-content">
+            <h2>Certificações</h2>
+            <div class="certification-item">
+                <img src="img/certificado.jpeg" alt="Certificado Serratec" class="certification-img">
+                <div class="certification-info">
+                    <h3>Residência em TIC - Desenvolvimento de Software</h3>
+                    <p><p>Concluído em julho de 2024, o programa de Residência em TIC do Serratec - Parque Tecnológico do RJ proporcionou um intenso treinamento prático e teórico em desenvolvimento de software, preparando profissionais para atuarem como desenvolvedores Full Stack.</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <div id="modal-container"></div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Leony. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        fetch('modal/modal.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('modal-container').innerHTML = data;
+
+
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("openModalBtn");
+            var span = document.getElementsByClassName("close")[0];
+
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+          });
+    </script>
+</body>
+</html>
