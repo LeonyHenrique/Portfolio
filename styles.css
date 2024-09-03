@@ -215,6 +215,15 @@ body {
 .about-text .btn:hover {
     transform: scale(1.1);
 }
+.soft-skills-list {
+    font-size: 18px; 
+    line-height: 1.6; 
+    margin-left: 20px; 
+}
+
+.soft-skills-list li {
+    margin-bottom: 10px; 
+}
 
 #skills {
     display: flex;
@@ -470,4 +479,5 @@ footer p {
         opacity: 1;
         transform: translateY(0);
     }
+    
 }
