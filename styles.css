@@ -43,7 +43,7 @@ body {
 .navbar nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: relative;
 }
 
@@ -515,7 +515,7 @@ footer p {
     transform: translate(-50%, -50%) scale(1);
 }
 
-/* RESPONSIVE MEDIA QUERIES */
+
 @media (max-width: 768px) {
     .header-content,
     #about,
@@ -533,7 +533,12 @@ footer p {
     .profile-img2 {
         max-width: 60%;
         margin: 0 auto;
+        
     }
+      .profile-img2{
+      display: none;
+
+      }
 
     .intro-text h1,
     .about-text h1,
