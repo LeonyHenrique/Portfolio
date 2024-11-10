@@ -470,14 +470,102 @@ footer p {
     letter-spacing: 1px;
 }
 
-@keyframes fadeIn {
+@keyframes textGlow {
     from {
-        opacity: 0;
-        transform: translateY(20px);
+        text-shadow: 0 0 20px rgba(160, 32, 240, 0.5);
     }
     to {
-        opacity: 1;
-        transform: translateY(0);
+        text-shadow: 0 0 35px rgba(255, 69, 0, 0.7);
     }
-    
+}
+
+.intro-text .btn {
+    background: linear-gradient(90deg, #FF4500, #A020F0);
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.5s ease, transform 0.3s ease;
+}
+
+.intro-text .btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #FF4500, #FF6347);
+}
+
+.intro-text .btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.6s ease;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.intro-text .btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 768px) {
+    .header-content,
+    #about,
+    #skills,
+    #resume,
+    #portfolio,
+    .certifications-content {
+        flex-direction: column;
+        padding: 20px;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .profile-img,
+    .profile-img2 {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    .intro-text h1,
+    .about-text h1,
+    .skills-content h2,
+    .portfolio-content h2,
+    .resume-content h2 {
+        font-size: 2rem;
+    }
+
+    .intro-text p,
+    .about-text p,
+    .resume-content p,
+    .project-info p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .project-item,
+    .certification-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project-info,
+    .certification-info {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .project-video iframe {
+        width: 100%;
+        height: auto;
+    }
 }
